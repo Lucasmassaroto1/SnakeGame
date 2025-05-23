@@ -1,13 +1,29 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jogo da Cobrinha</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game By Lucas Massaroto</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <canvas id="snakeGame"></canvas>
-  <script src="script.js"></script>
+    <div class="game-container">
+        <div id="start-screen" class="screen">
+            <h1>Snake Game</h1>
+            <button id="start-button">Iniciar Jogo</button>
+        </div>
+        
+        <div id="game-screen" class="screen hidden">
+            <canvas id="game-canvas"></canvas>
+            <div class="score">Pontuação: <span id="score">0</span></div>
+        </div>
+
+        <div id="game-over-screen" class="screen hidden">
+            <h1>Game Over</h1>
+            <p>Sua pontuação: <span id="final-score">0</span></p>
+            <button id="restart-button">Jogar Novamente</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
 </body>
-</html>
+</html> 
